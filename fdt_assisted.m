@@ -104,7 +104,8 @@ for i1 = new_vec
     set(z1,'color',[1 1 1])
     
     clf
-    suptitle(['Figure  ',num2str(con_fig),'/',num2str(length(new_vec))]);
+%%    suptitle(['Figure  ',num2str(con_fig),'/',num2str(length(new_vec))]);
+    sgtitle(['Figure  ',num2str(con_fig),'/',num2str(length(new_vec))]);  % https://www.mathworks.com/matlabcentral/answers/274877-suptitle-in-2016a
     subplot 131
     imagesc(lon(1,1+dif2:end-dif2), lat(1+dif2:end-dif2,1),GT,[0.4 2]),colormap(map)
     axis xy; axis equal
